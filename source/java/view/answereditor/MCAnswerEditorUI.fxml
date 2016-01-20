@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="addNewStudentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="355.0" text="Question Editor - Answers">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="58.0" prefHeight="44.0" prefWidth="70.0" text="Type:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerText1" layoutX="168.0" layoutY="125.0" prefHeight="25.0" prefWidth="355.0" text="Answer 1" />
+      <TextField fx:id="answerText2" layoutX="168.0" layoutY="189.0" prefHeight="25.0" prefWidth="355.0" text="Answer 2" />
+      <Button fx:id="saveChangesButton" layoutX="181.0" layoutY="425.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="124.0" text="Save Changes" />
+      <TextField fx:id="answerText3" layoutX="168.0" layoutY="256.0" prefHeight="25.0" prefWidth="355.0" text="Answer 3" />
+      <Label layoutX="168.0" layoutY="58.0" prefHeight="44.0" prefWidth="149.0" text="Multiple Choice">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerText4" layoutX="168.0" layoutY="321.0" prefHeight="25.0" prefWidth="355.0" text="Answer 4" />
+      <CheckBox fx:id="answerButton1" layoutX="143.0" layoutY="129.0" mnemonicParsing="false" />
+      <CheckBox fx:id="answerButton2" layoutX="143.0" layoutY="193.0" mnemonicParsing="false" />
+      <CheckBox fx:id="answerButton3" layoutX="143.0" layoutY="260.0" mnemonicParsing="false" />
+      <CheckBox fx:id="answerButton4" layoutX="143.0" layoutY="325.0" mnemonicParsing="false" />
+      <CheckBox fx:id="answerButton5" layoutX="143.0" layoutY="387.0" mnemonicParsing="false" />
+      <TextField fx:id="answerText5" layoutX="168.0" layoutY="383.0" prefHeight="25.0" prefWidth="355.0" text="Answer 5" />
+      <Button fx:id="cancelButton" layoutX="346.0" layoutY="425.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="124.0" text="Cancel" />
+      <ImageView fx:id="backToQuestionEditorButton" fitHeight="86.0" fitWidth="86.0" layoutX="32.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../questioneditor/arrow-right.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>

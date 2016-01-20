@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="proctorTestMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+	   <Label layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="244.0" text="Tests Being Proctored">
+	      <font>
+	         <Font size="20.0" />
+	      </font>
+	   </Label>
+	   <TableView fx:id="activeTestSessionsTable" layoutX="14.0" layoutY="53.0" prefHeight="243.0" prefWidth="401.0">
+	     <columns>
+	       <TableColumn fx:id="testName" prefWidth="208.0" text="Test Name" />
+	       <TableColumn fx:id="testCompletedness" minWidth="0.0" prefWidth="100.0" text="Progress" />
+	       <TableColumn fx:id="manageButton" minWidth="0.0" prefWidth="92.0" text="Manage" />
+	     </columns>
+	   </TableView>
+	   <Button fx:id="proctorNewTestButton" layoutX="261.0" layoutY="306.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="154.0" text="Proctor another test" />
+	</children>
+</fx:root>

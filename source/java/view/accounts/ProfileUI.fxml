@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="profilePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="profileVBox" prefHeight="536.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="profileHeaderHbox" prefHeight="307.0" prefWidth="600.0">
+               <children>
+                  <Pane fx:id="profilePicturePane" prefHeight="300.0" prefWidth="300.0">
+                     <children>
+                        <Rectangle fx:id="noProfilePictureRect" arcHeight="5.0" arcWidth="5.0" fill="#aeaeae" height="150.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" x="75.0" y="75.0" />
+                        <ImageView fx:id="profilePictureView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" x="75.0" y="75.0">
+                           <viewport>
+                              <Rectangle2D height="100.0" width="100.0" />
+                           </viewport>
+                        </ImageView>
+                        <Hyperlink fx:id="addProfilePicLink" layoutX="90.0" layoutY="225.0" text="Upload Profile Pic" underline="true" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="profileUserPane" prefHeight="300.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="profileFullNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="136.0" snapToPixel="false" text="First Name Last Name" textAlignment="CENTER" />
+                        <Label fx:id="profileUsernameLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="150.0" prefWidth="136.0" text="username" textAlignment="CENTER" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane fx:id="updateProfilePane" prefHeight="229.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="usernameFieldLabel" layoutX="100.0" layoutY="10.0" text="Username:" />
+                  <TextField fx:id="usernameField" layoutX="170.0" layoutY="5.0" prefHeight="27.0" prefWidth="225.0" text="Username" />
+                  <Label fx:id="currentPasswordFieldLabel" layoutX="102.0" layoutY="45.0" text="Password:" />
+                  <PasswordField fx:id="currentPasswordField" layoutX="170.0" layoutY="40.0" prefHeight="27.0" prefWidth="225.0" text="Password" />
+                  <Label fx:id="newPasswordFieldLabel" layoutX="71.0" layoutY="80.0" text="New Password:" />
+                  <PasswordField fx:id="newPasswordField" layoutX="170.0" layoutY="75.0" prefHeight="27.0" prefWidth="225.0" />
+                  <Label fx:id="confirmPasswordFieldLabel" layoutX="50.0" layoutY="115.0" text="Confirm Password:" />
+                  <PasswordField fx:id="confirmPasswordField" layoutX="170.0" layoutY="110.0" prefHeight="27.0" prefWidth="225.0" />
+                  <Button fx:id="updateProfileButton" layoutX="237.0" layoutY="154.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Update" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

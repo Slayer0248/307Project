@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="advancedGeneratorPage1Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="advancedGeneratorSplitPane" dividerPositions="0.3528428093645485" layoutY="41.0" prefHeight="410.0" prefWidth="600.0">
+        <items>
+          <AnchorPane fx:id="groupOrderingPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="groupsPane" minHeight="0.0" minWidth="0.0" prefHeight="370" prefWidth="192">
+                    <children>
+                       <Pane fx:id="allGroupsSubPane" minHeight="0.0" minWidth="0.0" prefHeight="37" prefWidth="192">
+                          <children>
+                             <Rectangle fx:id="addGroupButton" arcHeight="10.0" arcWidth="10.0" fill="#ffffff00" height="28.0" layoutX="6.0" layoutY="9.0" stroke="BLACK" strokeDashOffset="1.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" style="-fx-stroke-dash-offset: 150;; -fx-stroke-dash-array: 4 4;" width="180.0" />
+                             <Label fx:id="addGroupLabel" layoutX="8.0" layoutY="15.0" text="Add  New Automation Group" wrapText="true" />
+                          </children>
+                       </Pane>
+                    </children>
+                  </Pane>
+                  <ScrollBar fx:id="groupOrderingScroll" layoutX="192.0" layoutY="0.0" orientation="VERTICAL" prefHeight="370.0" prefWidth="17.0" />
+                  <Separator fx:id="groupOrderingDivider" layoutY="370.0" prefHeight="0.0" prefWidth="250.0" />
+                  <Rectangle fx:id="backgroundRect" arcHeight="5.0" arcWidth="5.0" fill="#ebebeb" height="43.0" layoutY="370.0" stroke="BLACK" strokeType="INSIDE" width="207.0" />
+                  <CheckBox fx:id="multipleTestsCheckbox" layoutX="8.0" layoutY="380.0" mnemonicParsing="false" text="Generate Multiple Tests" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="groupEditorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                 <Label fx:id="selectGroupLabel" layoutX="110.0" layoutY="190.0" text="Select an Automation Group" wrapText="true" />
+                 <ScrollBar fx:id="groupEditorScroll" orientation="VERTICAL" prefHeight="409.0" prefWidth="17.0" AnchorPane.leftAnchor="0.0" />
+                 <Pane fx:id="editorPane" layoutX="17.0" minHeight="0.0" minWidth="0.0" prefHeight="409.0" prefWidth="367.0">
+                    <children>
+                      <Pane fx:id="controlsPane" layoutX="0.0" minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="367.0">
+                       <children>
+                      <Label fx:id="groupTitleLabel" layoutY="2.0" text="Automation Group #">
+                      <font>
+                         <Font size="19.0" />
+                      </font>
+                      </Label>
+                     <Label fx:id="numQuestionsFieldLabel" layoutY="30.0" text="Number of Questions" />
+                     <TextField fx:id="numQuestionsField" layoutX="138.0" layoutY="25.0" prefHeight="27.0" prefWidth="134.0" />
+                     <Label fx:id="rulesHeaderLabel" layoutY="55.0" text="Automation Rules">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     </Label>
+                     <Rectangle fx:id="addRuleButton" arcHeight="20.0" arcWidth="20.0" fill="#ffffff00" height="43.0" layoutX="8.0" layoutY="81.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" style="-fx-stroke-dash-array: 4 4;;" width="332.0" />
+                     <Label fx:id="addRuleLabel" layoutX="100.0" layoutY="94.0" text="Add New Automation Rule" />
+                     </children>
+                    </Pane>
+                   </children>
+                 </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label fx:id="advancedGeneratorInstructionsLabel" prefHeight="35.0" prefWidth="600.0" text="Create a test automatically with the Advanced Test Generator by creating a few simple generation rules. Drag and drop to change the ordering of automation groups and rules." wrapText="true" />
+   </children>
+</fx:root>

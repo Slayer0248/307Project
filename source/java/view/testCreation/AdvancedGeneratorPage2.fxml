@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="advancedGeneratorPage2Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="requiredFieldsLabel" layoutX="186.0" layoutY="405.0" text="All fields on this page are required.">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameFieldLabel" layoutX="186.0" layoutY="35.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="229.0" layoutY="30.0" prefHeight="27.0" prefWidth="200.0" />
+      <Label fx:id="classFieldLabel" layoutX="188.0" layoutY="67.0" text="Class:" />
+      <TextField fx:id="classField" layoutX="229.0" layoutY="62.0" prefHeight="27.0" prefWidth="200.0" />
+      <Label fx:id="tagsFieldLabel" layoutX="191.0" layoutY="95.0" text="Tags:" />
+      <TextArea fx:id="tagsField" layoutX="229.0" layoutY="95.0" prefHeight="69.0" prefWidth="200.0" />
+      <Label fx:id="descriptionFieldLabel" layoutX="151.0" layoutY="172.0" text="Description:" />
+      <TextArea fx:id="descriptionField" layoutX="230.0" layoutY="171.0" prefHeight="100.0" prefWidth="200.0" wrapText="true" />
+   </children>
+</fx:root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="createTestViewPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.5" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="createTestViewRect" fill="WHITE" height="578.5" pickOnBounds="true" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="5.0" width="600.0" />
+      <Separator fx:id="createTestViewSeperatorAbove" layoutY="75.0" prefWidth="600.0">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="0.56" saturation="0.78" />
+         </effect>
+      </Separator>
+      <Label fx:id="createTestTitleLabel" alignment="CENTER" layoutX="161.0" text="Create New Test">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="quickCreatorLink" layoutX="10.0" layoutY="50.0" text="Quick Test Creator" />
+      <Hyperlink fx:id="simpleGeneratorLink" layoutX="150.0" layoutY="50.0" text="Simple Test Generator" />
+      <Hyperlink fx:id="advancedGeneratorLink" layoutX="310.0" layoutY="50.0" text="Advanced Test Generator" />
+      <Button fx:id="cancelButton" layoutX="184.0" layoutY="518.5" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Cancel" />
+      <Button fx:id="createButton" layoutX="354.0" layoutY="518.5" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Create" />
+      <ScrollPane fx:id="creatorContainerScrollPane" hbarPolicy="NEVER" layoutY="77.0" prefHeight="427.0" prefWidth="600.0">
+        <content>
+          <AnchorPane fx:id="creatorContainerAnchor" minHeight="0.0" minWidth="0.0" prefHeight="427.0" prefWidth="600.0" />
+        </content>
+      </ScrollPane>
+      <Separator fx:id="createTestViewSeperatorBelow" layoutY="502.5" prefWidth="600.0">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="0.56" saturation="0.78" />
+         </effect>
+      </Separator>
+   </children>
+</fx:root>

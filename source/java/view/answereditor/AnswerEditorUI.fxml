@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="answerPane" prefHeight="402.0" prefWidth="433.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="119.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answer Editor">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="90.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Type Selected: Free Response" textAlignment="CENTER" wrappingWidth="252.13671875" />
+      <Button fx:id="answerSaveChanges" layoutX="38.0" layoutY="341.0" mnemonicParsing="false" text="Save Changes" />
+      <Button fx:id="answerCancel" layoutX="342.0" layoutY="341.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="answerMainMenu" layoutX="198.0" layoutY="341.0" mnemonicParsing="false" text="Question Bank" />
+      <TextArea fx:id="answerFRQ" layoutX="108.0" layoutY="109.0" prefHeight="200.0" prefWidth="231.0" text="add keywords separated by commas..&#10;" />
+      <ImageView fx:id="answerToQuestion" fitHeight="150.0" fitWidth="51.0" layoutX="32.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../questioneditor/arrow-right.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>

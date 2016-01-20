@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="testBankPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="tags" layoutX="15.0" layoutY="188.0" prefHeight="30.0" prefWidth="291.0" promptText="Tags" />
+      <SplitPane dividerPositions="0.03511705685618729, 0.5100334448160535, 0.9648829431438127" layoutX="2.0" layoutY="235.0" prefHeight="215.0" prefWidth="600.0">
+        <items>
+            <ScrollBar fx:id="potentialScrollBar" orientation="VERTICAL" prefHeight="202.0" prefWidth="17.0" />
+          <AnchorPane fx:id="potentialQuestionPane" minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="320.0" />
+          <AnchorPane fx:id="chosenQuestionPane" minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="292.0" />
+            <ScrollBar fx:id="chosenScrollBar" orientation="VERTICAL" prefHeight="202.0" prefWidth="17.0" />
+        </items>
+      </SplitPane>
+      <Button fx:id="saveChangesButton" layoutX="179.0" layoutY="454.0" mnemonicParsing="false" onMouseClicked="#saveChanges" prefHeight="42.0" prefWidth="245.0" text="Save Changes">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="testName" layoutX="15.0" layoutY="69.0" prefHeight="67.0" prefWidth="291.0" promptText="Name of Test">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label fx:id="totalPoints" layoutX="327.0" layoutY="94.0" prefHeight="33.0" prefWidth="259.0" text="Points: 20">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="15.0" layoutY="142.0" prefHeight="30.0" prefWidth="291.0" promptText="Description" />
+      <Button fx:id="cancelButton" layoutX="15.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#cancelEdit" prefHeight="0.0" prefWidth="82.0" text="Cancel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="averageDifficulty" layoutX="327.0" layoutY="126.0" prefHeight="33.0" prefWidth="259.0" text="Difficulty: 1.5/5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

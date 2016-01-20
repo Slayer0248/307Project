@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="questionPane" prefHeight="600.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="120.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Editor" textAlignment="CENTER" wrappingWidth="364.427734375">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Name" wrappingWidth="233.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="questionName" layoutX="298.0" layoutY="132.0" text="Enter Question Name" />
+      <Text layoutX="65.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question" wrappingWidth="233.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="questionString" layoutX="298.0" layoutY="180.0" text="Enter Question" />
+      <Text layoutX="65.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" wrappingWidth="233.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="questionCategory" layoutX="298.0" layoutY="221.0" text="Enter Category" />
+      <ChoiceBox fx:id="questionType" layoutX="297.0" layoutY="260.0" prefWidth="150.0" />
+      <Text layoutX="65.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of Question" wrappingWidth="213.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="questionTimedQuestion" layoutX="65.0" layoutY="287.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="201.0" text="Timed Question">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="questionSaveChanges" layoutX="55.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Save Changes" />
+      <Button fx:id="questionCancel" layoutX="416.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Cancel" />
+      <ComboBox fx:id="timePerQuestion" layoutX="297.0" layoutY="309.0" prefWidth="150.0" promptText="Time per Question" />
+      <Button fx:id="questionReturntoMenu" layoutX="238.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Return to Question Bank" />
+      <Pane fx:id="questionToAnswerPane" layoutX="491.0" layoutY="263.0">
+         <children>
+            <ImageView fx:id="questionToAnswer" fitHeight="90.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@arrow-right.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text layoutX="65.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Points" wrappingWidth="213.00000920891762">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="points" layoutX="298.0" layoutY="358.0" text="Enter points(digits only)" />
+      <Text layoutX="65.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty Level" wrappingWidth="213.00000920891762">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="difficulty" layoutX="297.0" layoutY="404.0" prefWidth="150.0" promptText="Select Difficulty" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="54.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required" wrappingWidth="156.13671875" />
+      <Text layoutX="220.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="160.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="157.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="235.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="129.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="207.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="53.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# Time displayed in seconds" wrappingWidth="156.1367154121399" />
+      <Text layoutX="264.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" />
+   </children>
+</fx:root>

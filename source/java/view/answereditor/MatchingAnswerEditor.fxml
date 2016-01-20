@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<fx:root fx:id="matchingPane" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="153.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answer Editor">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="163.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type: Match the following">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="matchingTable" layoutX="158.0" layoutY="138.0" prefHeight="261.0" prefWidth="283.0">
+        <columns>
+          <TableColumn fx:id="matchingRow1" prefWidth="141.0" text="Row 1" />
+          <TableColumn minWidth="4.0" prefWidth="141.0" text="Row 2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="row1Text" layoutX="158.0" layoutY="409.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="row2Text" layoutX="310.0" layoutY="409.0" prefHeight="25.0" prefWidth="130.0" />
+      <Button fx:id="addButton" layoutX="455.0" layoutY="409.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="saveChangesButton" layoutX="48.0" layoutY="453.0" mnemonicParsing="false" text="Save Changes" />
+      <Button fx:id="deleteRowButton" layoutX="177.0" layoutY="453.0" mnemonicParsing="false" text="Delete Row" />
+      <Button fx:id="returntoQBButton" layoutX="288.0" layoutY="453.0" mnemonicParsing="false" text="Return to Question Bank" />
+      <Button fx:id="cancelButton" layoutX="474.0" layoutY="453.0" mnemonicParsing="false" text="Cancel" />
+      <ImageView fx:id="returntoQuestionEditorButton" fitHeight="94.0" fitWidth="111.0" layoutX="26.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../questioneditor/arrow-right.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="profLoginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="profLoginVBox" prefHeight="536.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="profLoginTitlePane" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="profLoginTitleLabel" layoutX="230.0" layoutY="81.0" prefHeight="139.0" prefWidth="167.0" text="Jeet" textAlignment="CENTER">
+                     <font>
+                        <Font size="80.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mode" alignment="CENTER" contentDisplay="CENTER" layoutY="240.0" minWidth="-Infinity" prefWidth="600.0" text="Professor" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Pane fx:id="profLoginFieldPane" prefHeight="229.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="usernameFieldLabel" layoutX="100.0" layoutY="10.0" text="Username:" />
+                  <TextField fx:id="usernameField" layoutX="188.0" layoutY="5.0" prefHeight="27.0" prefWidth="225.0" />
+                  <Label fx:id="passwordFieldLabel" layoutX="102.0" layoutY="45.0" text="Password:" />
+                  <PasswordField fx:id="passwordField" layoutX="188.0" layoutY="40.0" prefHeight="27.0" prefWidth="225.0" />
+                  <Button fx:id="profLoginButton" layoutX="256.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Log In" />
+                  <Button fx:id="switchModeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="190.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="190.0" text="Switch to Professor Login" textAlignment="CENTER" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

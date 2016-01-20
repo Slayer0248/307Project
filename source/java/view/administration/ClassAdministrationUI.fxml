@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="classAdminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutY="70.0" prefHeight="330.0" prefWidth="600.0">
+         <content>
+          <AnchorPane fx:id="classPane" layoutY="70.0" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="585.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="searchText" layoutX="25.0" layoutY="36.0" prefHeight="26.0" prefWidth="460.0" promptText="Search" />
+      <Button fx:id="searchButton" layoutX="508.0" layoutY="36.0" mnemonicParsing="false" text="Search" />
+      <Button fx:id="addNewClassButton" layoutX="90.0" layoutY="403.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="420.0" text="+">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</fx:root>

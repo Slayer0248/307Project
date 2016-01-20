@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="testPane" minHeight="139.0" minWidth="515.0" prefHeight="139.0" prefWidth="515.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="testName" layoutX="14.0" layoutY="49.0" prefHeight="42.0" prefWidth="208.0" text="Midterm 1">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="questionSummary" layoutX="313.0" layoutY="22.0" prefHeight="42.0" prefWidth="208.0" text="25 Questions">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPoints" layoutX="313.0" layoutY="49.0" prefHeight="42.0" prefWidth="208.0" text="50 Total Points" />
+      <Button fx:id="editTestButton" layoutX="451.0" layoutY="36.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="56.0" text="Edit" />
+      <Button fx:id="deleteTestButton" layoutX="451.0" layoutY="70.0" mnemonicParsing="false" text="Delete" />
+      <Separator layoutX="1.0" layoutY="137.0" prefHeight="0.0" prefWidth="515.0" />
+      <Separator layoutX="1.0" layoutY="1.0" prefHeight="3.0" prefWidth="515.0" />
+      <Label fx:id="averageDifficulty" layoutX="313.0" layoutY="75.0" prefHeight="42.0" prefWidth="208.0" text="1.2/5 Difficulty" />
+   </children>
+</fx:root>

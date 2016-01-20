@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="PageView" blendMode="SCREEN" depthTest="ENABLE" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="MainMenuBar" alignment="TOP_CENTER" gridLinesVisible="true" prefHeight="64.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Button fx:id="QuestionBankNavButton" accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Question Bank" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Helvetica Neue Bold" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="0.2" contrast="0.34" hue="0.19" saturation="0.93">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow color="TRANSPARENT" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </ColorAdjust>
+               </effect>
+            </Button>
+            <Button fx:id="TestBankNavButton" accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Test Bank" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Helvetica Neue Bold" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="0.2" contrast="0.34" hue="0.19" saturation="0.93">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow color="TRANSPARENT" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </ColorAdjust>
+               </effect>
+            </Button>
+            <Button fx:id="ProctorNavButton" accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Proctor Tests" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Helvetica Neue Bold" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="0.2" contrast="0.34" hue="0.19" saturation="0.93">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow color="TRANSPARENT" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </ColorAdjust>
+               </effect>
+            </Button>
+            <Button fx:id="GradesNaveButton" accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Grades" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Helvetica Neue Bold" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="0.2" contrast="0.34" hue="0.19" saturation="0.93">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow color="TRANSPARENT" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </ColorAdjust>
+               </effect>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+   <effect>
+      <Blend mode="SOFT_LIGHT" opacity="0.06" />
+   </effect>
+</Pane>

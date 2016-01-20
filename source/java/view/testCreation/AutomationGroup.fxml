@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="automationGroupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="180.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="automationGroupLabel" layoutX="31.0" layoutY="6.0" prefHeight="50.0" prefWidth="143.0" text="Automation Group #">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fx:id="removeGroupButton" fill="#ffffff00" layoutX="17.0" layoutY="30.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="removeGroupLabel" layoutX="8.0" layoutY="3.0" text="-">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="automationGroupRect" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="60.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" width="180.0" />
+   </children>
+</fx:root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="studentPane" depthTest="ENABLE" prefHeight="600.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pagination fx:id="pagination" layoutY="85.0" prefHeight="475.0" prefWidth="600.0" />
+      <ProgressBar fx:id="progressBar" layoutY="64.0" prefHeight="20.0" prefWidth="600.0" progress="0.0" />
+      <Label fx:id="timer" layoutX="532.0" layoutY="34.0" prefHeight="34.0" prefWidth="54.0" text="00:00">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="numCompleted" layoutX="14.0" layoutY="14.0" text="0/0 Completed" />
+      <Label fx:id="numSkipped" layoutX="14.0" layoutY="39.0" text="0 Skipped" />
+      <Button fx:id="logout" layoutX="524.0" layoutY="9.0" mnemonicParsing="false" text="Log Out" />
+   </children>
+</fx:root>

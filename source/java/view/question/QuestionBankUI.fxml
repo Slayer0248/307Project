@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<fx:root fx:id="rootpane" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <AnchorPane fx:id="questionBankAP" maxHeight="536.0" maxWidth="600.0" minHeight="536.0" minWidth="600.0" prefHeight="536.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="searchButton" layoutX="458.0" layoutY="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Search" />
+                  <TextField fx:id="searchText" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="418.0" text="Search here.." />
+                  <Pane fx:id="addQuestionPane" layoutX="13.0" layoutY="67.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdcdcd" height="139.0" stroke="BLACK" strokeType="INSIDE" width="515.0" />
+                        <ImageView fx:id="questionBankAdd" fitHeight="107.0" fitWidth="149.0" layoutX="210.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@070928-glossy-black-icon-alphanumeric-plus-sign-simple.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  
+               </children>
+            </AnchorPane>
+            <ScrollBar fx:id="questionBankScroll" layoutX="574.0" layoutY="21.0" orientation="VERTICAL" prefHeight="493.0" prefWidth="26.0" />
+         </children>
+</fx:root>

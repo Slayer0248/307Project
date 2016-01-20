@@ -1,0 +1,7 @@
+Some notes on structure
+
+model directory - any overall objects that will be needed in multiple parts of the app
+view directory - one to one translation of functional requirements pages to a class.
+
+The idea is basically that a view class should only need to access model classes to work with the
+underlying data.

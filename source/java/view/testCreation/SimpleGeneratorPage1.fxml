@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="simpleGeneratorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="requiredFieldsLabel" layoutX="202.0" layoutY="52.0" text="Bold indicates a required field">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="instructionsLabel" contentDisplay="TEXT_ONLY" prefHeight="36.0" prefWidth="600.0" text="Create a test automatically with the Simple Test Generator by selecting a few simple generation rules." wrapText="true" />
+      <Pane fx:id="generationRulesSectionPane" layoutX="121.0" layoutY="87.0" prefHeight="262.0" prefWidth="358.0">
+         <children>
+            <Label fx:id="generationRulesTitle" text="Test Generation Rules">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <CheckBox fx:id="olderLastUsedCheckbox" layoutY="25.0" mnemonicParsing="false" text="Use older questions when possible" />
+            <CheckBox fx:id="varyDifficultyCheckbox" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="392.0" text="Use a variety of difficulty levels for all question types" wrapText="true" />
+            <CheckBox fx:id="moreDifficultCheckbox" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="More difficult for class (based on past performance)" wrapText="true" />
+            <CheckBox fx:id="asDifficultCheckbox" layoutY="87.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="As difficult for class (based on past performance)" wrapText="true" />
+            <CheckBox fx:id="lessDifficultCheckbox" layoutY="109.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Less difficult for class (based on past performance)" wrapText="true" />
+            <CheckBox fx:id="multipleTestsCheckbox" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Generate multiple assessments" wrapText="true" />
+            <CheckBox fx:id="ascDifficultyOrderCheckbox" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Order by increasing difficulty" wrapText="true" />
+            <CheckBox fx:id="ascTimeOrderCheckbox" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Order by increasing time" wrapText="true" />
+            <CheckBox fx:id="questionTypeOrderCheckbox" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Order by question type" wrapText="true" />
+            <CheckBox fx:id="ascPointsOrderCheckbox" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="351.0" text="Order by increasing points" wrapText="true" />
+            <Button fx:id="lessAssessmentsButton" layoutX="227.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="17.0" text="-" />
+            <Button fx:id="moreAssessmentsButton" layoutX="298.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="13.0" text="+" />
+            <Label fx:id="numAssessmentsLabel" layoutX="269.0" layoutY="136.0" text="2" />
+         </children>
+      </Pane>
+      <Pane fx:id="testStatsSectionPane" layoutX="124.0" layoutY="349.0" prefHeight="487.0" prefWidth="351.0">
+         <children>
+            <Label fx:id="testStatsSectionTitle" text="Desired Test Stats">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Pane fx:id="testTotalsSectionPane" layoutY="23.0" prefHeight="217.0" prefWidth="351.0">
+               <children>
+                  <Label fx:id="testTotalsSectionTitle" text="Totals">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="testTotalsFormPane" layoutY="20.0" prefHeight="197.0" prefWidth="351.0">
+                     <children>
+                        <Label fx:id="pointsFieldLabel" layoutY="5.0" text="Points:" />
+                        <TextField fx:id="pointsField" layoutX="49.0" prefHeight="27.0" prefWidth="65.0" />
+                        <Label fx:id="lengthFieldLabel" layoutX="129.0" layoutY="5.0" text="Length:" />
+                        <TextField fx:id="lengthHoursField" layoutX="182.0" prefHeight="27.0" prefWidth="65.0" />
+                        <Label fx:id="lengthHoursLabel" layoutX="250.0" layoutY="5.0" text="hours" />
+                        <TextField fx:id="lengthMinutesField" layoutX="182.0" layoutY="33.0" prefHeight="27.0" prefWidth="65.0" />
+                        <Label fx:id="lengthMinutesLabel" layoutX="250.0" layoutY="38.0" text="minutes" />
+                        <Label fx:id="difficultyFieldLabel" layoutY="70.0" text="Difficulty:" />
+                        <TextField fx:id="difficultyField" layoutX="62.0" layoutY="65.0" prefHeight="27.0" prefWidth="65.0" />
+                        <Label fx:id="classFieldLabel" layoutX="137.0" layoutY="70.0" text="Class:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="classField" layoutX="180.0" layoutY="65.0" prefHeight="27.0" prefWidth="163.0" />
+                        <Label fx:id="questionCategoriesLabel" layoutY="100.0" text="Question Categories:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="questionCategoriesField" layoutX="143.0" layoutY="100.0" prefHeight="89.0" prefWidth="200.0" wrapText="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="testSectionBreakdownPane" layoutY="240.0" prefHeight="247.0" prefWidth="351.0">
+               <children>
+                  <Label fx:id="testSectionBreakdownTitle" text="Section Breakdown">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="testSectionBreakdownForm" layoutY="20.0" prefHeight="227.0" prefWidth="351.0">
+                     <children>
+                        <Label fx:id="sectionTimeHeader" layoutX="120.0" layoutY="3.0" text="Time" />
+                        <Label fx:id="sectionPointsHeader" layoutX="189.0" layoutY="3.0" text="Points" />
+                        <Label fx:id="sectionDifficultyHeader" layoutX="270.0" layoutY="3.0" text="Diificulty" />
+                        <Label fx:id="tfSectionLabel" layoutX="27.0" layoutY="23.0" text="True/False" />
+                        <TextField fx:id="tfSectionTimeField" layoutX="103.0" layoutY="18.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="tfSectionPointsField" layoutX="176.0" layoutY="18.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="tfSectionDifficultyField" layoutX="249.0" layoutY="18.0" prefHeight="27.0" prefWidth="95.0" />
+                        <Label fx:id="mcSectionLabel" layoutY="57.0" text="Multiple Choice" />
+                        <TextField fx:id="mcSectionTimeField" layoutX="103.0" layoutY="52.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="mcSectionPointsField" layoutX="176.0" layoutY="52.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="mcSectionDifficultyField" layoutX="249.0" layoutY="52.0" prefHeight="27.0" prefWidth="95.0" />
+                        <Label fx:id="blanksSectionLabel" layoutX="1.0" layoutY="91.0" text="Fill in the Blank" />
+                        <TextField fx:id="blanksSectionTimeField" layoutX="103.0" layoutY="86.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="blanksSectionPointsField" layoutX="176.0" layoutY="86.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="blanksSectionDifficultyField" layoutX="249.0" layoutY="86.0" prefHeight="27.0" prefWidth="95.0" />
+                        <Label fx:id="shortAnswerSectionLabel" layoutX="14.0" layoutY="125.0" text="Short Answer" />
+                        <TextField fx:id="shortAnswerSectionTimeField" layoutX="103.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="shortAnswerSectionPointsField" layoutX="176.0" layoutY="120.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="shortAnswerSectionDifficultyField" layoutX="249.0" layoutY="120.0" prefHeight="27.0" prefWidth="95.0" />
+                        <Label fx:id="longAnswerSectionLabel" layoutX="15.0" layoutY="159.0" text="Long Answer" />
+                        <TextField fx:id="longAnswerSectionTimeField" layoutX="103.0" layoutY="154.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="longAnswerSectionPointsField" layoutX="176.0" layoutY="154.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="longAnswerSectionDifficultyField" layoutX="249.0" layoutY="154.0" prefHeight="27.0" prefWidth="95.0" />
+                        <Label fx:id="codingSectionLabel" layoutX="14.0" layoutY="193.0" text="Programming" />
+                        <TextField fx:id="codingSectionTimeField" layoutX="103.0" layoutY="188.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="codingSectionPointsField" layoutX="176.0" layoutY="188.0" prefHeight="27.0" prefWidth="65.0" />
+                        <TextField fx:id="codingSectionDifficultyField" layoutX="249.0" layoutY="188.0" prefHeight="27.0" prefWidth="95.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="createSectionPane" layoutX="164.0" layoutY="836.0" prefHeight="79.0" prefWidth="272.0">
+         <children>
+            <Label fx:id="createSectionLabel" text="Create:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="createBlankCheckbox" layoutX="53.0" mnemonicParsing="false" text="Blank Test" />
+            <CheckBox fx:id="createCopyCheckbox" layoutX="53.0" layoutY="23.0" mnemonicParsing="false" text="Copy an Existing Test" />
+            <ComboBox fx:id="testCopySelect" layoutX="53.0" layoutY="45.0" prefHeight="27.0" prefWidth="200.0" promptText="Select Test to Copy" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>

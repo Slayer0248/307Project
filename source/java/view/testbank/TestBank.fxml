@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="testBankAP" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="addNewTestButton" layoutX="90.0" layoutY="108.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="420.0" text="+">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchButton" layoutX="488.0" layoutY="35.0" mnemonicParsing="false" text="Search" />
+            <TextField fx:id="searchText" layoutX="14.0" layoutY="35.0" prefHeight="26.0" prefWidth="460.0" promptText="Search" />
+         </children>
+      </AnchorPane>
+      <ScrollBar fx:id="testBankScroll" layoutX="574.0" layoutY="21.0" orientation="VERTICAL" prefHeight="493.0" prefWidth="26.0" />
+   </children>
+</fx:root>
